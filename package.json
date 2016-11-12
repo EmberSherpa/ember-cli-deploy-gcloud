@@ -43,10 +43,10 @@
     "ember-cli-deploy-plugin"
   ],
   "dependencies": {
+    "@google-cloud/storage": "^0.4.0",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-deploy-elastic-beanstalk": "0.5.0",
-    "ember-cli-deploy-plugin": "0.2.6",
-    "gcloud": "0.32.0"
+    "ember-cli-deploy-plugin": "0.2.6"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
