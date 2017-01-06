@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-gcloud",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "An ember-cli-deploy plugin for deploying an Ember app to Google Cloud running FastBoot.",
   "keywords": [
     "ember-addon"
