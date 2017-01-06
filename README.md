@@ -1,6 +1,24 @@
-# Ember-cli-deploy-gcloud
+# ember-cli-deploy-gcloud
 
-This README outlines the details of collaborating on this Ember addon.
+`ember-cli-deploy-gcloud` makes it easier to deploy Ember FastBoot applications to Google App Engine. 
+
+## Features
+- `ember-cli-deploy-gcloud` blueprint
+
+## `ember-cli-deploy-gcloud <project_id>` blueprint
+
+Creates `/server` directory with code necessary to deploy FastBoot to Google App Engine. 
+
+To setup, 
+
+1. `ember g ember-cli-deploy-gcloud <project_id>`
+2. `cd server`
+3. `npm run deploy`
+
+## FYI
+
+This project only handles deploying the FastBoot server. It does not upload app code to Google Storage bucket. 
+For that, you need to use [`ember-cli-deploy-gcloud-storage`](https://github.com/knownasilya/ember-cli-deploy-gcloud-storage)
 
 ## Installation
 
