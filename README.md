@@ -7,7 +7,7 @@
 
 ## `ember-cli-deploy-gcloud <project_id>` blueprint
 
-Creates `/server` directory with code necessary to deploy FastBoot to Google App Engine. 
+Creates `/fastboot-server` directory with code necessary to deploy FastBoot to Google App Engine. 
 
 To setup, 
 
