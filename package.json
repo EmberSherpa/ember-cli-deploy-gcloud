@@ -3,7 +3,8 @@
   "version": "0.3.2",
   "description": "An ember-cli-deploy plugin for deploying an Ember app to Google Cloud running FastBoot.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-cli-deploy-plugin"
   ],
   "license": "MIT",
   "author": "Taras Mankovski <tarasm@gmail.com>",
