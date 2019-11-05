@@ -18,15 +18,15 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-    "dependencies": {
+  "dependencies": {
+    "@google-cloud/storage": "^4.1.0",
     "ember-cli-deploy-elastic-beanstalk": "0.5.0",
-    "ember-cli-deploy-plugin": "0.2.9",
-    "google-cloud": "^0.55.0"
+    "ember-cli-deploy-plugin": "0.2.9"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
-    "ember-cli": "2.13.2",
+    "ember-cli": "3.13.1",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-eslint": "^3.0.0",
     "ember-cli-htmlbars": "^1.1.1",
