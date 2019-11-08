@@ -1,9 +1,13 @@
 # ember-cli-deploy-gcloud
+`ember-cli-deploy-gcloud` makes it easier to deploy Ember FastBoot applications to Google App Engine. It's like [ember-cli-deploy-fastboot-app-server-aws](https://github.com/ember-cli-deploy/ember-cli-deploy-fastboot-app-server-aws) but for the Google Cloud Platform. It:
 
-`ember-cli-deploy-gcloud` makes it easier to deploy Ember FastBoot applications to Google App Engine. 
+- zips the built assets
+- uploads the zip to Google Cloud Storage
+- uploads a manifest file that indicates to [fastboot-gcloud-storage-downloader](https://github.com/EmberSherpa/fastboot-gcloud-storage-downloader) where to fetch the zip.
 
-## Features
-- `ember-cli-deploy-gcloud` blueprint
+## FYI
+This project only handles deploying the FastBoot server. It does not upload app code to Google Storage bucket. 
+For that, you need to use [`ember-cli-deploy-gcloud-storage`](https://github.com/knownasilya/ember-cli-deploy-gcloud-storage)
 
 ## `ember-cli-deploy-gcloud <project_id>` blueprint
 
@@ -15,10 +19,21 @@ To setup,
 2. `cd server`
 3. `npm run deploy`
 
-## FYI
+## Usage as `ember-cli-deploy` plugin
 
-This project only handles deploying the FastBoot server. It does not upload app code to Google Storage bucket. 
-For that, you need to use [`ember-cli-deploy-gcloud-storage`](https://github.com/knownasilya/ember-cli-deploy-gcloud-storage)
+```
+// config/deploy.js
+
+ENV['gcloud'] = {
+  bucket: <gcloud-storage-bucket>,
+  key: <path-for-manifest-file>, // e.g. 'fastboot-deploy-info.json
+  // optional
+  credentials: {
+    private_key: <google-cloud-private-key>
+    client_email: <google-cloud-client-email>
+  }
+};
+```
 
 ## Installation
 
